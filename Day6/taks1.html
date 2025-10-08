@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple form</title>
+</head>
+<body>
+    <form action="" method="get" autocomplete="on">
+        <fieldset>
+            <legend><strong>All input elements</strong></legend>
+            <label for="name">Name</label>
+            <input type="text" name = "name" placeholder="name" required>
+            <br><br><br>
+            <label for="age">Your age</label>
+            <input type="number" name="age" min="18" max="30" placeholder="Your Age " required >
+            <br><br><br>
+            <label for="Email">Email</label>
+            <input type="email" name = "email" placeholder="abc@gmail.com" required>
+            <br><br><br>
+            <label for="passsword">Enter your password</label>
+            <input type="password" name = "passsword" placeholder="Your password" minlength="8" maxlength="15" required>
+            <br><br><br>
+            <label for="DOB">Date of birth</label>
+            <input type="date" name="DOB" required>
+            <br><br><br>
+            <label for="color">Your favorite color</label>
+            <input type="color" name = "color" >
+            <br><br><br>
+            <label for="file">Upload your Resume</label>
+            <input type="file" name = "file" accept=".pdf,.doc" required >
+            <br><br><br>
+            <label for="url">Provide your github URL</label>
+            <input type="url" name = "url">
+            <br><br><br>
+            <label for="phone">Enter your number</label>
+            <input type="tel" name="phone" placeholder="123-456-789" required>
+            <br><br><br>
+            <label for="department">Your department is : </label>
+            <input type="radio" name = "department" value = "CSE">
+            <label for="CSE">CSE</label>
+            <input type="radio" name = "department" value = "IT">
+            <label for="IT">IT</label>
+             <input type="radio" name = "department" value = "ECE">
+            <label for="ECE">ECE</label>
+             <input type="radio" name = "department" value = "Others">
+            <label for="Others">Others</label>
+            <br><br><br>
+            <label for="points">Rate your experience:</label>
+            <input type="range" name="points" min="0" max="10" value="5">
+            <br><br><br>
+            <label for="about">About yourself:</label>
+            
+
+
+
+        </fieldset>
+
+        <br><br><br>
+        <button type = "reset">Reset</button>
+        <button type="submit"> Submit</button>
+    </form>
+    
+</body>
+</html>
