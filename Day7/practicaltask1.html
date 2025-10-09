@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1 {
+            color: navy;
+            text-align: center;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        table {
+            width: 50%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        th {
+            background-color: lightgray;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Attendance Sheet</h1>
+    <table border="1" style = "border-collapse: collapse;">
+        <tr>
+            <th>Name</th>
+            <th>06/10/2025</th>
+            <th>07/10/2025</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td><input type="checkbox" name="attendance1" value="present"></td>
+            <td><input type="checkbox" name="attendance1" value="absent"></td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td><input type="checkbox" name="attendance2" value="present"></td>
+            <td><input type="checkbox" name="attendance2" value="absent"></td>
+        </tr>
+        <tr>
+            <td>Emily Johnson</td>
+            <td><input type="checkbox" name="attendance3" value="present"></td>
+            <td><input type="checkbox" name="attendance3" value="absent"></td>
+        </tr>
+        <tr>
+            <td>Michael Brown</td>
+            <td><input type="checkbox" name="attendance4" value="present"></td>
+            <td><input type="checkbox" name="attendance4" value="absent"></td>
+        </tr>
+        <tr>
+            <td>Sarah Davis</td>
+            <td><input type="checkbox" name="attendance5" value="present"></td>
+            <td><input type="checkbox" name="attendance5" value="absent"></td>
+        </tr>
+    </table>
+</body>
+</html>
