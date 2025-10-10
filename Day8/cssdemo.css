@@ -1,0 +1,38 @@
+.group{
+    background-color: yellow;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline dotted;
+
+}
+
+#name , #email{
+    background-color: aqua;
+    color: aliceblue;
+    text-align: center;
+    
+}
+
+input::placeholder{
+    color: blueviolet;
+    font-size: large;
+}
+
+div{
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    color: tomato;
+    background-color: blueviolet;
+}
+
+
+#para1{
+    color : yellow;
+    background-color: black;
+} 
+
+label{
+    color: brown;
+    background-color: aqua;
+}
