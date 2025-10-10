@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Selectors Example</title>
+  <style>
+    /* Type selector */
+    h2 {
+      color: teal;
+      text-align: center;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    /* Class selector */
+    .highlight {
+      background-color: #fce4ec;
+      color: #880e4f;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    /* ID selector */
+    #unique {
+      border: 3px solid purple;
+      padding: 15px;
+      background-color: #f3e5f5;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h2>Welcome to the Type, Class, and ID Selector Demo</h2>
+
+  <p class="highlight">
+    This paragraph is styled using a <b>class selector</b>.  
+    Class selectors are useful when you want to apply the same style 
+    to multiple elements. For example, this pink box could be reused for
+    different sections like tips, notes, or warnings.
+  </p>
+
+  <div id="unique">
+    This <b>div</b> is styled using an <b>ID selector</b>, which should be unique within the page.
+    You can use an ID for highlighting one specific area like a featured product, 
+    a main announcement, or a special banner section.
+  </div>
+
+  <p>
+    Type selectors, class selectors, and ID selectors together form the foundation 
+    of CSS styling. They help create a clear hierarchy and structure in your web design.
+  </p>
+</body>
+</html>
