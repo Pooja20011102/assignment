@@ -1,0 +1,18 @@
+.content{
+    width : 20%;
+    height : 500px;
+    background-color: lightcoral;
+    padding : 20px;
+    text-align: center;
+    color : whitesmoke;
+    border-radius: 40px;
+    
+}
+
+.skill{
+    width : auto;
+    height : auto;
+    background-color: aqua;
+    border : 1px solid white;
+    color: black;
+}
