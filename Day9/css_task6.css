@@ -6,6 +6,10 @@
     text-align: center;
     color : whitesmoke;
     border-radius: 40px;
+     margin-top : 10px;
+    margin-left: 470px;
+    margin-bottom: 10px;
+    
     
 }
 
@@ -16,4 +20,8 @@
     border : 1px solid white;
     color: black;
     margin: 2px;
+    border-radius: 40px;
 }
+ h1{
+    text-align: center;
+ }
