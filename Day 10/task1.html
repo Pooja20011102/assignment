@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Tasks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund+Guides&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            background-image: linear-gradient(to bottom,plum,purple);
+            background-repeat: no-repeat;
+            background-size: contain;
+        
+        }
+
+        #p1{
+            color : rgb(34, 173, 41);
+            text-shadow: rgb(234, 50, 50) 5px 0px 0px ;
+        }
+
+        #p2{
+            color : rgb(139, 23, 0);
+            text-shadow: black 0px 5px 0px;
+        }
+
+        #id3{
+            color : royalblue;
+            text-shadow: rgb(0, 0, 0) 8px 5px 1px;
+        }
+
+        #id4{
+            text-shadow: 2px 2px 8px #FF0000;
+        }
+
+        #font1{
+            font-family: "Playwrite DE Grund Guides", cursive;
+            font-weight: 400;
+            font-style: normal;
+            font-size: larger;
+        }
+
+        #font2{
+             font-family: "Playwrite DE SAS", cursive;
+             font-size: larger;
+        }
+
+        #font3{
+            font-family: "Dancing Script", cursive;
+            font-size: larger;
+        }
+
+        .banner-section {
+            background-color:lightpink;
+            height : 200px;
+            width: 200px;
+           
+        }
+
+        .box{
+            width : 100px;
+            height : 100px;
+            background-color: darkgreen;
+            border : 2px solid red;
+            margin  : 2px;
+        }
+
+        .relative{
+            position: relative;
+            left: 40px;
+            top : 20px;
+        }
+
+        .absolute{
+            position: absolute;
+            left : 30px;
+            right : 5px;
+        }
+
+        .fixed{
+            width : 200px;
+            height : 100px;
+            background-color: #FF0000;
+            border: 3px solid blanchedalmond;
+            position: fixed;
+            top : 0px;
+            left : 1px;
+        }
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <h1>A colored gradient background for my homepage.</h1>
+    <p>Background Color with linear gradint is set.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, eum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, omnis. Voluptatem tempora ad laboriosam, nam nobis at, voluptates ea aut minus totam fugit possimus qui ratione quia! Expedita, soluta. Nobis?</p>
+
+    <br><br>
+
+    <h2>Text Shadows</h2>
+    <p id="p1">Look at the text shadow for x-axis</p>
+    <p id="p2">Lorem ipsum dolor sit amet. (y-axis)</p>
+    <p id="id3">All Three values provides</p>
+    <p id="id4">Text-shadow with blur effect</p>
+
+    <br><br><br>
+
+    <h3>Google Foonts</h3>
+    <p id="font1">Look at this font</p>
+    <p id="font2">Other Cursive Fonts</p>
+    <p id="font3">Dancing Font</p>
+
+    <br><br><br>
+
+    <h4>Banner Section</h4>
+    <div class="banner-section">
+        <div class="banner-content">
+            <h1>Welcome to Our Site</h1>
+            <p>Discover amazing things here.</p>
+        </div>
+    </div>
+
+    <br><br>
+     <h5>Relative,Absolute and Fixed Positions</h5>
+     <p class="box relative">
+        This box is moved from its original position
+        <div class=" box absolute">I am absolute</div>
+     </p>
+     <br><br>
+     
+
+     <p class="fixed">I am fixed at top right corner</p>
+
+    
+</body>
+</html>
