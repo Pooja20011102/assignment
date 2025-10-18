@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+         .grid{
+            
+            background-color: lawngreen;
+            display: grid;
+            grid-template-areas: 'header header header'
+                                'aside1 main1 main2'
+                                'aside2 main3 main4'
+                                'footer footer footer'; 
+        }
+        .item{
+            background-color: darkgoldenrod;
+            margin : 3px;
+            border : 1px solid black;
+            padding: 2px;
+            height : 100px;
+            text-align: center;
+        }
+         .header{
+            grid-area: header;
+        }
+        .main1{
+            grid-area: main1;
+        }
+        .main2{
+            grid-area : main2;
+        }
+        .main3{
+            grid-area: main3;
+        }
+        .main4{
+            grid-area: main4;
+        }
+        .aside1{
+            grid-area: aside1;
+        }
+        .aside2{
+            grid-area: aside2;
+        }
+        .footer{
+            grid-area: footer;
+        }
+       
+    </style>
 </head>
 <body>
     <h1>grid-template-areas</h1>
-    
+    <div class="grid">
+        <div class="item header">Header</div>
+        <div class="item main1">Main Content1</div>
+        <div class="item main2">Main Content2</div>
+        <div class="item main3">Main Content3</div>
+        <div class="item main4">Main Content4</div>
+        <div class="item aside1">Aside1</div>
+        <div class="item aside2">Aside2</div>
+        <div class="item footer">Footer</div>
+    </div>
 </body>
 </html>
