@@ -4,11 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .grid{
+            display: grid;
+            width : 100%;
+            height: 300px;
+            background-color: aqua;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        .box{
+            background-color: lightpink;
+            border: 1px solid black;
+            width : 90%;
+            height: 90px;
+            margin: 10px;
+        }
+        
+        @media (max-width : 900px) {
+            .grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                width : 100%;
+                height: 600px;
+                background-color: aqua;
+            }
+        }
+
+         @media (max-width : 600px) {
+            .grid{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width : 100%;
+                height: 900px;
+                background-color: aqua;
+                margin: 10px;
+            }
+        }
+    
+    
+
+    </style>
 </head>
 <body>
     <h1>grid</h1>
     <div class="grid">
-        .bo
+        <div class="box"> Introduces the character and their world (status quo)</div>
+        <div class="box">The inciting incident occurs, disrupting the status quo, leading to a "lock-in" where the character is committed to a goal or journey</div>
+        <div class="box">The protagonist sets out to achieve their goal and encounters initial obstacles.</div>
+        <div class="box">The protagonist faces larger, more difficult obstacles, leading to a first failure to achieve the goal</div>
+        <div class="box">The character is now further from their goal and a "campfire" scene occurs where backstory is revealed</div>
+        <div class="box">A "last push" to achieve the initial goal is successful, but it creates or exacerbates a new, unresolved conflict.</div>
+        <div class="box">The protagonist addresses the new tension from the previous sequence.</div>
+        <div class="box">The final conflict is resolved, and a new status quo is established, often showing the character's need has been met. </div>
     </div>
 </body>
 </html>
