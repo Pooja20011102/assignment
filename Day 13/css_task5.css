@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    text-align: center;
+}
+
+.hero{
+    width : 100vw;
+    height : 40vh;
+    background: linear-gradient(to right,pink,rgb(8, 0, 2),rgb(189, 98, 113));
+    color: white;
+    display: flex;
+    flex-direction: column;
+     justify-content: center; /* ✅ centers vertically */
+    align-items: center;     /* ✅ centers horizontally */
+    gap: 1.5em;
+    padding: 0 1em;
+    text-align: center;
+
+}
+
+.button{
+    width : 20%;
+    height : 50px;
+    align-self: center;
+    border-radius: 5px;
+}
+
+.button:hover{
+    background-color:wheat;
+    color : goldenrod
+
+}
