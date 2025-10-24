@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bouncing Ball</title>
+    <style>
+        .ball{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            border-radius: 60%;
+            background-color: red;
+            animation: bounce 1s infinite;
+        }
+        @keyframes bounce{
+            0%{ top : 0px;}
+            
+            100%{top : 300px;}
+            
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Bouncing ball</h1>
+    <p>I am a bouncing red ball</p>
+    <div class="ball"></div>
 </body>
 </html>
