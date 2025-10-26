@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Change the paragraph on clicking</h1>
+    <p id="para">Discipline requires a set of rules, behavioral patterns, and a paradigm.</p>
+    <button onclick="myFunc()" type="button">Click me</button>
+    <script>
+        function myFunc(){
+            const a = document.getElementById("para")
+            a.innerHTML = "To achieve a happy and fulfilling life, one must have control over their actions and emotions."
+        }
+    </script>
+</body>
+</html>
