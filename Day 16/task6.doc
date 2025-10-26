@@ -1,0 +1,41 @@
+ 20 Key Points About JavaScript
+
+JavaScript is a high-level, interpreted programming language.
+
+It is lightweight and designed primarily for web interactivity.
+
+Runs on both client-side and server-side (via Node.js).
+
+Single-threaded but uses an event-driven asynchronous model.
+
+Dynamic typing — no need to declare variable types.
+
+Prototype-based object-oriented language.
+
+Supports first-class functions (functions are treated as variables).
+
+Supports closures for encapsulating variables.
+
+Uses ECMAScript as its official standard specification.
+
+Can manipulate the DOM (Document Object Model) dynamically.
+
+Works with HTML and CSS to create responsive web pages.
+
+Supports modules for code organization (import/export).
+
+JSON (JavaScript Object Notation) is widely used for data exchange.
+
+Supports Promises and async/await for asynchronous programming.
+
+Widely used in front-end frameworks (React, Vue, Angular).
+
+Used in backend development with Node.js and Express.
+
+Compatible with APIs (REST, Fetch, AJAX).
+
+Supports ES Modules (ESM) and CommonJS module systems.
+
+Has a huge ecosystem of libraries and packages (npm).
+
+Continues to evolve annually with new ECMAScript features.
