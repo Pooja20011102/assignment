@@ -36,6 +36,7 @@ let largeNumber = 9007199254740991n;
 const colors = ["red", "green", "blue"]; // Array (a type of object)
 function greet() { console.log("Hello");
  } // Function (a type of object)
+ let isStudent = false;
 
 console.log(username);
 console.log(age);
@@ -48,6 +49,8 @@ console.log(id);
 console.log(largeNumber);
 console.log(colors);
 console.log(greet());
+console.log(isStudent);
+
 
 
 
@@ -67,6 +70,7 @@ console.log(typeof id);
 console.log(typeof largeNumber);
 console.log(typeof colors);
 console.log(typeof greet);
+console.log(typeof isStudent);
 
 // Try assigning a number, then a string to the same variable — observe behavior.
 
