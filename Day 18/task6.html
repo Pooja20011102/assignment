@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Enter your age to check whelther you cqan drive or not</h1>
+    <p id="para1"></p>
+    <script>
+        let age = prompt();
+        let res;
+        if (age>=18){
+            res = "You can drive.";
+            
+        }
+        else{
+            res = "You cannot drive";
+            
+        }
+        document.getElementById("para1").innerText = res;
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Choose one color and see the result for the color</h1>
+    <label for="color">Choose one color</label>
+    <select name="color" id="color">
+        <option value="title" disabled selected>---</option>
+        <option value="red">Red</option>
+        <option value="orange">Orange</option>
+        <option value="yellow">Yellow</option>
+    </select>
+    <br><br>
+    <button type="submit" onclick="getresult()">Submit</button>
+    <p id="para1"></p>
+
+    <script>
+        function getresult() {
+            let color = document.getElementById("color").value;
+            let res;
+            if (color == "red"){
+                res = "Stop!"
+            }
+            else if(color == "yellow"){
+                res = "Get Ready!"
+            }
+            else{
+                res = "GO !!!"
+            }
+        document.getElementById("para1").innerText = res
+        }
+    </script>
+</body>
+</html>
