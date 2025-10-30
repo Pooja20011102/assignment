@@ -3,7 +3,7 @@ let password = "Abc@132"
 
 if (username=="admin"){
     if (password="Abc@132"){
-        console.log("Looged in successfully");
+        console.log("Logged in successfully");
         
     }
     else{
