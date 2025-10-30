@@ -3,7 +3,7 @@ let age = 20; //if block executed
 age = 15; //else block executed
 
 if (age >=18){
-    console.log("You are eligible to work");
+    console.log("You are eligible to vote");
     
 }
 else{
