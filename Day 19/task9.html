@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Print all numbers upto a value</h1>
+    <button type="submit" onclick="printnumbers()">Click me</button>
+    <p id="para"></p>
+
+    <script>
+        function printnumbers(){
+            let a = prompt("Enter a number");
+            let output = " "
+            for (let i = 1;i<=a;i++){
+               output += i + " ";
+            }
+            document.getElementById("para").innerHTML = output;
+        }
+    </script>
+</body>
+</html>
