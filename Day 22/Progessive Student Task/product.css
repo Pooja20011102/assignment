@@ -1,9 +1,7 @@
 body{
     
     min-height: 100vh;
-    background: url(./flowerimages/download\ \(3\).jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: pink;
 }
 .flex{
     display: flex;
