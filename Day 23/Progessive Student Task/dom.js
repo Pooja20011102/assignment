@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // 1️⃣ Add descriptions to list
+    
     const a = document.querySelectorAll('.description');
     const b = document.getElementById('display');
     b.innerHTML = "";
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         b.appendChild(c);
     });
 
-    // 2️⃣ Change background color on button click
+    
     const d = document.getElementById('change');
     d.addEventListener('click', function() {
         document.body.style.backgroundColor = 'red';
