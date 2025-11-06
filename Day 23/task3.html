@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Append list</h1>
+    <ul></ul>
+    <button>Click to add in list</button>
+    <script>
+        const a = document.querySelector('button');
+        a.addEventListener('click',function(){
+            for (let i =0;i<3;i++){
+                let a = prompt("Enter to add in the list");
+                let b = document.createElement("li");
+                b.innerText = a;
+                let c = document.querySelector("ul");
+                c.appendChild(b);
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Exercise</title>
+</head>
+<body>
+    <h1>Type the text in the input field to get the data in paragraph</h1>
+    <label for="text">Input Data</label>
+    <input type="text" name="text" id="text">
+    <p id="res"></p>
+    <button type="submit" onclick="change()">Click me</button>
+    <script>
+        function change(){
+            let a = document.getElementById("text");
+           
+            
+            document.getElementById("res").innerText = a.value;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Change color paragraph</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, eos.</p>
+    <button>Click</button>
+
+    <script>
+        const a = document.querySelector("button");
+        a.addEventListener("click",function(){
+            const b = document.querySelector("p");
+            b.style.color = 'red';
+        })
+    </script>
+</body>
+</html>

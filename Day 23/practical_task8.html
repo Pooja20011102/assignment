@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <style>
+        html, body {
+        height: 100%; 
+        margin: 0; 
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .box{
+            border: 2px solid black;
+            background-color: aqua;
+            width : 30vw;
+            height: 30vh;
+            overflow: scroll auto;
+        }
+        .item p{
+            text-align: center;
+        }
+        .item button{
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item">
+            <p>Todo List</p>
+            <ul id="ul"></ul>
+           
+        </div>
+      
+       
+    </div>
+     <button type="button" onclick="add()">Add item</button>
+        <button type="button" onclick="remove()">Remove item</button>
+     
+    <script src="task8.js"></script>
+</body>
+</html>

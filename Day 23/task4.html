@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>Remove list</h1>
+    <ul>
+        <li>apple</li>
+        <li>banana</li>
+        <li>orange</li>
+    </ul>
+    <button>Click to remove in list</button>
+
+    <script>
+        const a = document.querySelector('button');
+        a.addEventListener("click",function(){
+            const b = document.querySelector("ul");
+            b.removeChild(b.firstElementChild);
+        })
+    </script>
+</body>
+</html>

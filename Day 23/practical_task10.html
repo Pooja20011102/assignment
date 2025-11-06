@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Assignment</title>
+</head>
+<body>
+    <h1>InnerHTML use</h1>
+    <p id="p1"></p>
+    <button type="button">Click me</button>
+
+    <script>
+        const button_click = document.querySelector("button");
+        button_click.addEventListener('click',function(){
+            const a = document.getElementById("p1");
+            let res = prompt("Enter text with HTML");
+            a.innerHTML = res;
+        })
+    </script>
+    
+</body>
+</html>

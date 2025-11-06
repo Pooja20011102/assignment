@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark mode</title>
+    <style>
+        .dark{
+            background-color: black;
+            color : white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click the button to view in Dark Mode</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis aperiam labore corporis non fugiat iste quo odit eveniet omnis voluptatibus?</p>
+    <p>//Write your code here</p>
+    <button type="button" onclick="dark()">Dark Mode</button>
+    <script>
+        function dark(){
+            let a = document.body;
+            a.classList.toggle("dark");
+        }
+    </script>
+</body>
+</html>
