@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .style{
+            color : red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Button that changes color</h1>
+    <p id="p1">I will change color</p>
+    <button type="button">Change Color</button>
+    <script>
+        const a = document.querySelector('button');
+        a.addEventListener('click',()=>{
+            const b = document.getElementById('p1');
+            b.classList.toggle('style');
+        })
+    </script>
+</body>
+</html>

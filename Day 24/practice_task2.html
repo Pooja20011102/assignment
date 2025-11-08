@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Live user input</h1>
+    <label for="text">User a text</label>
+    <input type="text" id="text" name="text">
+    <p id="res"></p>
+
+    <script>
+        let a = document.getElementById('text');
+        let b = document.getElementById('res');
+        a.addEventListener('input',()=>{
+             b.innerText = "You typed " + a.value;
+        })
+    </script>
+</body>
+</html>

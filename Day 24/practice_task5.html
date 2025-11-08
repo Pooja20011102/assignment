@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .style{
+            color : red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Error Handling</h1>
+    <label for="number">Enter only a postitive number</label>
+    <input type="number" name="number" id="number">
+    <p id="p1"></p>
+    <button type="submit" id="button">Submit</button>
+
+    <script>
+        const a = document.getElementById('button');
+        let b = document.getElementById('number');
+        const c = document.getElementById('p1');
+       
+        a.addEventListener('click',function(){
+            
+            try{
+                if (b.value<0){
+                    throw new Error('The number is negative');
+                }
+                c.innerText = "The entered value is " +  b.value;
+                c.classList.remove("style")
+            }
+            catch(error){
+                c.innerText = "Error! " + error.message
+                c.classList.add("style");
+            }
+            finally{
+                c.innerText += "\nNumber Validation Completed!"
+            }
+        })
+    </script>
+</body>
+</html>
