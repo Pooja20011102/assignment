@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Change color when element found</h1>
+    <!-- <p id="p1">Lorem ipsum dolor sit amet.</p> (When element present , then there is no error) --> 
+    <button type="button" id="btn">Click me</button>
+    <p id="res"></p>
+
+    <script>
+        const res = document.getElementById('res');
+        res.innerText = '';
+        document.getElementById('btn').addEventListener('click',function(){
+            try{
+                const a = document.getElementById('p1')
+                a.style.color = 'blue';
+                res.innerText = "Color Changed"
+            }
+            catch (error){
+                res.innerText = "Error " + error.message;
+            }
+            finally{
+                res.innerText += "\nDone"
+            }
+        })
+    </script>
+</body>
+</html>

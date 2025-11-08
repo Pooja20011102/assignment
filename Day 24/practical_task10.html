@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Login Form</title>
+</head>
+<body>
+    <h1>Secure Login Form</h1>
+
+    <form id="loginForm">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" placeholder="Enter username"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" placeholder="Enter password"><br><br>
+
+        <button type="submit" id="btn">Login</button>
+    </form>
+
+    <p id="res"></p>
+
+    <script>
+        const form = document.getElementById("loginForm");
+        const user = document.getElementById("username");
+        const pass = document.getElementById("password");
+        const res = document.getElementById("res");
+
+        // Add DOM event
+        form.addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent page refresh
+            res.innerText = ""; // Clear previous result
+
+            try {
+                // Input validation
+                if (user.value.trim() === "" || pass.value.trim() === "") {
+                    throw new Error("Fields cannot be empty");
+                }
+
+                if (pass.value.length < 6) {
+                    throw new Error("Password must be at least 6 characters long");
+                }
+
+                // Dummy credentials for demo
+                const correctUser = "admin";
+                const correctPass = "123456";
+
+                if (user.value !== correctUser || pass.value !== correctPass) {
+                    throw new Error("Invalid username or password");
+                }
+
+                // Success message
+                res.innerText = "Login successful!";
+            } 
+            catch (error) {
+                // Handle all errors
+                res.innerText = "Error: " + error.message;
+            } 
+            finally {
+                // Always runs
+                res.innerText += "\nLogin attempt completed";
+            }
+        });
+    </script>
+</body>
+</html>

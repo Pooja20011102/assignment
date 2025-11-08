@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Safe Calculator</h1>
+    <label for="num1">Enter your first number</label>
+    <input type="number" name="num1" id="num1"><br><br>
+    <label for="num2">Enter your second number</label>
+    <input type="number" name="num2" id="num2"><br><br>
+    <button type="button" id="btn">Divide(/)</button><br><br>
+    <p id="res"></p>
+
+    <script>
+        const a = document.getElementById("num1");
+        const b = document.getElementById("num2");
+        const c = document.getElementById("btn");
+        const d = document.getElementById("res");
+        d.innerText = ''
+        c.addEventListener("click",function(){
+            try{
+                if(a.value === "" || b.value === ""){
+                    throw new Error("Number is missing");
+                }
+                else if(Number(b.value) === 0){
+                    throw new Error("You cant divide a number by zero");
+                }
+                d.innerText = "Result is : " + a.value/b.value;
+            }
+            catch (error){
+                d.innerText = "Error" + error.message;
+            }
+        })
+    </script>
+</body>
+</html>

@@ -21,6 +21,9 @@
             padding: 10px;
             width : 50%;
         }
+        .style{
+            color : red;
+        }
     </style>
 </head>
 <body>
@@ -29,17 +32,18 @@
         <form id="myform">
             <label for="name">Enter your name</label>
             <input type="text" id="name" name="name" placeholder="John Doe">
-            <p id="valid id1"></p>
+           
             <br><br>
             <label for="age">Enter your Age</label>
             <input type="number" id="age" name="age" placeholder="20">
-            <p id="valid id2"></p>
+          
             <br><br>
             <label for="email">Your Email</label>
             <input type="email" id="email" name="email" placeholder="abc@gmail.com">
-            <p id="valid id3"></p>
+        
             <br><br>
-            <button type="submit">Submit</button>
+            <button type="button" id="btn">Submit</button>
+            <p id="res"></p>
         </form>
     </div>   
 

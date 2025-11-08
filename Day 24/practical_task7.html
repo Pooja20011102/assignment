@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Live counter</h1>
+    <form id="form">
+        <label for="text">Textarea</label><br><br>
+        <textarea name="text" id="text" placeholder="Enter text" rows="15" cols="25" ></textarea>
+        <p id="res"></p>
+    </form>
+  
+    <script>
+        const a = document.getElementById('text');
+        const b = document.getElementById('res');
+        const form = document.getElementById('form');
+        form.addEventListener('input',function(){
+            b.innerText = a.value.length;
+        })
+     </script>
+</body>
+</html>
