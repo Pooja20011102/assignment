@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Form Validation</title>
+</head>
+<body>
+  <h2>Simple Validation Form</h2>
+
+  <form id="myForm">
+    <label for="name">Enter your name:</label><br>
+    <input type="text" id="name" placeholder="John Doe"><br><br>
+
+    <label for="age">Enter your age:</label><br>
+    <input type="number" id="age" placeholder="18"><br><br>
+
+    <label for="email">Enter your email:</label><br>
+    <input type="email" id="email" placeholder="example@gmail.com"><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="res"></p>
+
+  <script>
+    const form = document.getElementById("myForm");
+    const nameInput = document.getElementById("name");
+    const ageInput = document.getElementById("age");
+    const emailInput = document.getElementById("email");
+    const res = document.getElementById("res");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();  // stop page refresh
+      res.innerText = "";      // clear old result
+
+      try {
+        if (nameInput.value.trim() === "") {
+          throw new Error("Name cannot be empty");
+        }
+
+        if (ageInput.value === "" || ageInput.value <= 0) {
+          throw new Error("Enter a valid positive age");
+        }
+
+        if (emailInput.value.trim() === "" || emailInput.value.indexOf('@') === -1) {
+          throw new Error("Enter a valid email containing '@'");
+        }
+
+        res.innerText = "All inputs are valid!";
+      } 
+      catch (error) {
+        res.innerText = "Error: " + error.message;
+      } 
+      finally {
+        res.innerText += "\n Validation attempt completed.";
+      
+      }
+    });
+  </script>
+</body>
+</html>

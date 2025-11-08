@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .style{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Validation</h1>
+    <label for="name">Enter your name</label>
+    <input type="text" id="name" name="name">
+    <label for="email">Ente your email</label>
+    <input type="email" name="email" id="email">
+    <button type="button" id="btn">Click me</button>
+    <p id="res"></p>
+
+    <script>
+        const a = document.getElementById('name');
+
+        const c = document.getElementById('email');
+
+        const btn = document.getElementById("btn");
+
+        btn.addEventListener('click',function(event){
+            event.preventDefault();
+            const res = document.getElementById('res');
+            res.innerText = '';
+            let errors = []
+            try{
+                if (a.value.trim() === ''){
+                    errors.push("Name cannot be empty");
+                }
+                if (c.value === ''){
+                errors.push("Email cannot be empty")
+                }
+                else if(c.value.indexOf('@')===-1){
+                errors.push("Your mail should have @ symbol");
+            }
+            if (errors.length > 0){
+                throw new Error(errors.join("\n"));
+            }        
+            res.innerText = "Form Filled Correctly";
+            res.classList.remove('style')
+        }
+        catch(error){
+            res.innerText =`Error got : ${error.message}`;
+            res.classList.add("style")
+        }
+        finally{
+        res.innerText += "\nForm Validation Completed"
+        }
+    })
+    </script>
+</body>
+</html>

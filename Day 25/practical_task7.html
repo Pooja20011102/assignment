@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .style{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Validation</h1>
+    <label for="name">Enter your name</label>
+    <input type="text" id="name" name="name">
+    <p id="res1"></p>
+    <label for="email">Ente your email</label>
+    <input type="email" name="email" id="email">
+    <p id="res2"></p>
+    <button type="button" id="btn">Click me</button>
+  
+
+    <script>
+        const a = document.getElementById('name');
+
+        const c = document.getElementById('email');
+
+        const btn = document.getElementById("btn");
+
+        btn.addEventListener('click',function(event){
+            event.preventDefault();
+            const res1 = document.getElementById('res1');
+            res1.innerText = '';
+            const res2 = document.getElementById('res2');
+            res2.innerText = '';
+           
+            try{
+                if (a.value.trim() === ''){
+                    throw new Error("Name cannot be empty");
+                }
+                res1.innerText = "Name validated"
+                res1.classList.remove("style")
+            }
+            catch (e){
+                res1.innerText = "Error " + e.message
+                res1.classList.add("style")
+            }
+            finally{
+                res1.innerText += "\nName validation Completed"
+            }
+            try{
+                if (c.value.trim() === ""){
+                throw new Error("\nEmail cannot be empty")
+            }
+            else if(c.value.indexOf('@')===-1){
+                throw new Error("\nYour mail should have @ symbol");
+            }
+            res2.innerText = "Email validated"
+            res2.classList.remove("style")
+        }
+         catch (e){
+            res2.innerText = "\nError " + e.message
+            res2.classList.add("style")
+        }
+        finally{
+            res2.innerText += "\nEmail Validation Completed"
+        }
+          
+    })
+    </script>
+</body>
+</html>
