@@ -1,0 +1,60 @@
+body{
+    
+    min-height: 100vh;
+    background-color: pink; 
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap : .5rem;
+    
+}
+.item{
+    width : 32%;
+    background-color: palevioletred;
+    border : .2rem solid red;
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+    transition: all 1s ease-in-out;
+    flex: 1;
+    
+}
+.item:hover{
+    transform: scale(1.02);
+    border: .2rem solid rgb(220, 106, 106);
+    background-color: rgb(184, 34, 84);
+}
+.description{
+    font-size : 1rem;
+    padding: .5rem;
+
+}
+button{
+    background: black;
+    color: wheat;
+    width : 50%;
+    align-self: center;
+    padding: .5rem;
+    margin: .2rem;
+    border-radius: .7rem;
+    cursor: pointer;
+    text-align: center;
+}
+button:hover{
+    background : rgba(1, 1, 1,.8);
+    color : white;
+}
+
+.flex .item img{
+    width  : 100%;
+    height : 70%;
+    object-fit: cover;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+}
