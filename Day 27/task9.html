@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <label for="username">Enter your username</label>
+<input type="text" id="username" name="username">
+
+<button onclick="getname()">Click me</button>
+
+<div id="para"></div>
+
+<script>
+    async function getname() {
+        let username = document.getElementById("username").value.trim();
+        let para = document.getElementById("para");
+        para.innerHTML = `<p style="color: blue;"> Loading, please wait...</p>`;
+        try {
+            let res = await fetch("https://api.github.com/users");
+            if (!res.ok) throw new Error("Failed to fetch users");
+
+            let data = await res.json();
+
+          
+            let user = data.find(u => u.login.toLowerCase() === username.toLowerCase());
+
+            if (user) {
+                para.innerHTML = `
+                    <p><img src="${user.avatar_url}" width="80" height="80" alt="avatar"> </p>
+                    <p><strong>Username:</strong> ${user.login}</p>
+                    <p><strong>Profile URL:</strong> <a href="${user.html_url}" target="_blank">${user.html_url}</a></p>
+                `;
+            } else {
+                para.innerText = " Username not found!";
+            }
+
+        } catch (error) {
+            para.innerHTML = `<p style="color:red">" Error: " + error.message</p>;`
+        }
+    }
+</script>
+
+</body>
+</html>

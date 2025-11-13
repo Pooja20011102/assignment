@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #para{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columns adjust, minimum 200px, maximum 1fr */
+            grid-auto-rows: minmax(100px, auto); /* Implicit rows are at least 100px tall */
+            grid-gap: 20px;
+            
+        }
+
+        #ele{
+            border : 1px solid black;
+            background-color: green;
+            color: wheat;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <p id="para"></p>
+
+    <script>
+        async function display(){            
+            let res =  await fetch("https://api.github.com/users");
+            res =  await res.json();
+            document.getElementById("para").innerHTML = 
+            res.map((u) => `<p id="ele"><img src="${u.avatar_url}" alt="avatar image" width="50" height="50"> ${u.login}   ${u.url}</p>`).join('');
+        }
+        
+        display();
+        
+    </script>
+</body>
+</html>
