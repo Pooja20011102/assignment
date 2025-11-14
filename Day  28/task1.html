@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <h1>Store name and course</h1>
+    <label for="name">Enter your name</label>
+    <input type="text" id="name" name="name">
+    <br><br>
+    <label for="course">Enter your Course</label>
+    <input type="text" id="course" name="course">
+    <br><br>
+
+    <button type="button" onclick="savedata()">Save data</button>
+
+    <button type="button" onclick="showdata()">Show saved data</button>
+
+    <p id="result_name"></p>
+    <p id="result_age"></p>
+
+    <script>
+        function savedata(){
+            let name1 = document.getElementById("name").value;
+            let course1 = document.getElementById("course").value;
+            localStorage.setItem("name2",name1);
+            localStorage.setItem("course2",course1);
+            alert('Data Saved');
+        }
+
+        function showdata(){
+            let namestored = localStorage.getItem("name2");
+            let agestored = localStorage.getItem("course2");
+            document.getElementById("result_name").innerText = namestored ? namestored : "Name not stored";
+            document.getElementById("result_age").innerText = agestored ? agestored : "Age not stored";
+        }
+    </script>
+</body>
+</html>
