@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <button type="button" onclick="display()">Click me to store data</button>
+
+
+
+
+    <script>
+        // Create an object, convert it to JSON, and save it in localStorage.
+        function display(){
+            let obj = {
+            name : "Divya",
+            age : 21,
+            course : "BE EEE"
+        }
+        obj = JSON.stringify(obj)
+        localStorage.setItem("object",obj);
+        alert("Object Stored")
+        } 
+    </script>
+</body>
+</html>

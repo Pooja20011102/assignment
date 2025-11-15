@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <button type="button" onclick="display()">Click me to store data</button>
+
+     <button type="button" onclick="show()">Click me to show to show data</button>
+     <p id="name"></p>
+     <p id="age"></p>
+     <p id="course"></p>
+
+
+    <script>
+        // Use JSON.parse() to read and log the saved data.
+        function display(){
+            let obj = {
+            name : "Divya",
+            age : 21,
+            course : "BE EEE"
+        }
+        obj = JSON.stringify(obj)
+        localStorage.setItem("object",obj);
+        alert("Object Stored")
+        }
+     
+        function show(){
+            const objects = localStorage.getItem("object");
+            const parsed = JSON.parse(objects);
+            document.getElementById("name").innerText = "Name : " + parsed.name;
+            document.getElementById("age").innerText = "Age: "  + parsed.age;
+            document.getElementById("course").innerText = "Course: " + parsed.course;
+        }
+        
+
+    </script>
+</body>
+</html>
