@@ -1,0 +1,82 @@
+<!--  Messy JavaScript
+<!DOCTYPE html>
+<html>
+<body>
+
+<input id="num1" placeholder="Number 1">
+<input id="num2" placeholder="Number 2">
+<button onclick="calculate()">Add</button>
+
+<p id="result"></p>
+
+<script>
+function calculate(){
+    let a = document.getElementById("num1").value
+    let b = document.getElementById("num2").value
+    if(a === "" || b === ""){
+        document.getElementById("result").innerText = "Enter both numbers"
+    } else {
+        let r = parseInt(a) + parseInt(b)
+        document.getElementById("result").innerText = "Result is " + r
+    }
+}
+</script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<input id="num1" placeholder="Number 1">
+<input id="num2" placeholder="Number 2">
+<button id="addBtn">Add</button>
+
+<p id="result"></p>
+
+<script>
+// MODULE 1: DOM Utilities 
+function getValue(id) {
+    return document.getElementById(id).value.trim();
+}
+
+function showResult(text) {
+    document.getElementById("result").innerText = text;
+}
+
+//  MODULE 2: Business Logic 
+function validateInputs(a, b) {
+    return a !== "" && b !== "";
+}
+
+function addNumbers(a, b) {
+    return Number(a) + Number(b);
+}
+
+//  MODULE 3: Event Handler 
+function handleAddition() {
+    const num1 = getValue("num1");
+    const num2 = getValue("num2");
+
+    if (!validateInputs(num1, num2)) {
+        showResult("Enter both numbers");
+        return;
+    }
+
+    const result = addNumbers(num1, num2);
+    showResult("Result is " + result);
+}
+
+// EVENT LISTENER 
+document.getElementById("addBtn").addEventListener("click", handleAddition);
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    /* background-color: #cd8d2c; */
+}
+
+.hero{
+    margin: 0 5px;
+    padding: 10px;
+    width : 100vw;
+    height : 30vh;
+    /* display: flex;
+    flex-direction: row; */
+    background: linear-gradient(to right,#CD2C58,#E06B80,#FFC69D);
+    color : white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap : 2em;
+}
+
+nav{
+    display : flex;
+    flex-direction: row;
+    gap : 1.2em;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+
+}
+
+.id{
+    text-decoration: none;
+    border : 2px solid black;
+    color: aliceblue;
+    background-color: lightcoral;
+    transition: all 1s ease-in-out;
+}
+
+.id:hover{
+    transform: scale(1.05);
+    color : rgb(100, 159, 210)
+}
+
+img{
+    width : 5em;
+    height : 5em;
+    border-radius: 70%;
+    border : 1px solid black;
+   float: left;
+}
+
+.details {
+    width: 100%;
+    background-color: #CFADC1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.details img {
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-bottom: 15px;
+}
+
+.details p {
+    color: rgb(40, 11, 184);
+    line-height: 1.4em;
+    max-width: 600px;
+}
+
+/* ---------- EDUCATION & SKILLS ---------- */
+.education, .skills-certificates {
+    width: 100%;
+    text-align: center;
+    background-color: #FFE5E5;
+    padding: 30px 10px;
+}
+
+.education ul, .skills-certificates ol {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.skills-certificates h2 {
+    margin-bottom: 10px;
+    color: #5A1B5F;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+    background-color: #CD2C58;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+#para{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columns adjust, minimum 200px, maximum 1fr */
+    grid-auto-rows: minmax(100px, auto); /* Implicit rows are at least 100px tall */
+    grid-gap: 5px;
+            
+}
+
+#ele{
+    border : 1px solid black;
+    background-color: green;
+    color: wheat;
+    padding: 5px;
+    overflow-x: scroll;
+}
+
+
+@media (max-width: 600px) {
+    .hero {
+        height: auto;
+        padding: 40px 10px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .id {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
+
+    .details img {
+        width: 6em;
+        height: 6em;
+    }
+
+    .details p {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    .education li, .skills-certificates li {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+}
+
+/* For medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 992px) {
+    .hero {
+        height: 50vh;
+    }
+
+    nav {
+        gap: 2em;
+    }
+
+    .details {
+        flex-direction: row; /* ✅ image + text side by side */
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .details p {
+        max-width: 400px;
+        text-align: left;
+    }
+}
+
+body.light { background: #ffffff; color: black; }
+        body.dark { background: #1e1e1e; color: white; }
+
+        .pref-box {
+            padding: 15px;
+            margin: 20px;
+            border: 1px solid gray;
+            width: 300px;
+        }

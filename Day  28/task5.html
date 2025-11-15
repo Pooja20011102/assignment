@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="display()">Click me</button>
+    <p id="res"></p>
+
+    <button onclick="show()">Click to show in console</button>
+
+    <button onclick="get_a()">Click and go to source tab</button>
+
+    <script>
+        function display(){
+            let a = 15;
+            if (a<=18){
+                document.getElementById("res").innerText = "Age is less than 15";
+            }
+            else{
+                document.getElementById("res").innerText = "Age greater than 18";
+            }
+        }
+        function show(){
+            let obj = {
+                name : "abi",
+                age : 34,
+                course : "BE"
+            }
+            console.table(obj)
+        }
+
+        function get_a(){
+            const a = 13;//breakpoint applied
+            {
+                const a = 10;//breakppint applied
+            }
+            console.log(a);//breakpoint applied
+        }
+
+    </script>
+</body>
+</html>

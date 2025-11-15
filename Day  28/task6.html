@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="eleclick()">Click me</button>
+
+    <p id="res"></p>
+
+    <script>
+        function eleclick(){
+            if (!navigator.geolocation){
+                document.getElementById("res").innerText = "Geolocation not Supported";
+                return;
+            }
+            navigator.geolocation.getCurrentPosition(showPosition,showError);
+        }
+
+        function showPosition(pos){
+            const {latitude , longitude} = pos.coords;
+            document.getElementById("res").innerText = `latitude : ${Latitude} longitude : ${Longitude}`;
+        }
+
+        function showError(error){
+            document.getElementById("res").innerText =  `Error : ${error.message}`;
+        }
+    </script>
+</body>
+</html>

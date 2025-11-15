@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Store the current time</h1>
+    <button type="button" onclick="saveTime()">Save Time</button><br><br>
+    <button type="button" onclick="showTime()">Show Time</button>
+
+
+    <script>
+        function saveTime(){
+            const date = new Date();
+            const time = date.toLocaleTimeString();
+            sessionStorage.setItem("currenttime",time);
+            alert("TIme stored");
+        }
+
+        function showTime(){
+            let currtime = sessionStorage.getItem("currenttime");
+            console.log(currtime);
+        }
+
+    </script>
+
+</body>
+</html>
