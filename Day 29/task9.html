@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css_portfolio.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="css_9.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+           <button id="id1" href="#details">My Details</button>
+           <button  id="id2" href="#education">Education and Skills</button> 
+           <button id="id3" href="#footer">Contact</button>
+        </nav>
+        <h1>Pooja Jayashankar</h1>
+        <p>My own portfolio page</p>
+    </div>
+
+    <div class="content">
+        <div class="details" id="details">
+            <img src="./Pooja.jpg" alt="My Photo">
+            <p>I am Pooja Jayashaner. I completed BE Biomedical Engineering at Savetha Engineering College with minors in Datascience. I am learning Python fullstack developer course at SLA</p>
+           
+        </div>
+         <br><br><br><br>
+        <div class="education"id="education"> 
+            <ul>
+                <li>10th - Everwin Matriculation School with 98%</li>
+                <li>12th - Everwin Matriculation School with 89%</li>
+                <li>BE Biomedical Engineering at Savetha Engineering College with CGPA 8.86</li>
+            </ul>
+        </div>
+       <br><br><br><br>
+        <div class="skills and certifictes">
+            <hr>
+            <h2>Skills</h2>
+            <ol>
+                <li>HTML & CSS</li>
+                <li>Python and data structures</li>
+                <li>Java</li>
+                <li>SQL</li>
+            </ol>
+            <hr>
+            <br><br><br>
+            <h2>Certificates</h2>
+            <ol>
+                <li>Core Java Certificate from Internshala</li>
+                <li>Worshop certicate for Excel,powerbi</li>
+                <li>Udemy Data analyst certificate</li>
+            </ol>
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <address>
+            <a href="mailto:poojasasi112@gmil.com">Mailme</a>
+            <a href="tel:+917358034741">Contact me</a>
+        </address>
+    </div>
+
+    <script>
+        $("#id1").click(function(){
+             $("#details").toggle();
+        })
+
+        $("#id2").click(function(){
+            $("#education").fadeToggle();
+        })
+
+        $("#id3").click(function(){
+            $("#footer").fadeToggle();
+        })
+    </script>
+</body>
+</html>

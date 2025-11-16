@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <h1>Quiz</h1>
+    <button id="q1">Question1</button>
+    <button id="q2">Question2</button>
+    <button id="q3">Question3</button>
+    <button id="q4">Question4</button>
+    <button id="q5">Question5</button>
+
+    <div id="quiz1" style="display:none;">
+        <h3>What is the capital of India?</h3>
+        <input type="radio" name="q1" value="a">A. Mumbai<br>
+        <input type="radio" name="q1" value="b">B. New Delhi<br>
+        <input type="radio" name="q1" value="c">C. Kolkata<br>
+        <input type="radio" name="q1" value="d">D. Chennai<br>
+    </div>
+
+    <div id="quiz2" style="display:none;">
+        <h3>Which planet is known as the Red Planet?</h3>
+        <input type="radio" name="q2" value="a">A. Earth<br>
+        <input type="radio" name="q2" value="b">B. Mars<br>
+        <input type="radio" name="q2" value="c">C. Jupiter<br>
+        <input type="radio" name="q2" value="d">D. Venus<br>
+    </div>
+
+    <div id="quiz3" style="display:none;">
+        <h3>What is the largest ocean on Earth?</h3>
+        <input type="radio" name="q3" value="a">A. Atlantic Ocean<br>
+        <input type="radio" name="q3" value="b">B. Indian Ocean<br>
+        <input type="radio" name="q3" value="c">C. Pacific Ocean<br>
+        <input type="radio" name="q3" value="d">D. Arctic Ocean<br>
+    </div>
+    
+    <div id="quiz4" style="display:none;">
+        <h3>Who wrote 'Romeo and Juliet'?</h3>
+        <input type="radio" name="q4" value="a">A. Charles Dickens<br>
+        <input type="radio" name="q4" value="b">B. Mark Twain<br>
+        <input type="radio" name="q4" value="c">C. William Shakespeare<br>
+        <input type="radio" name="q4" value="d">D. Jane Austen<br>
+    </div>
+
+    <div id="quiz5" style="display:none;">
+        <h3>What is the chemical symbol for water?</h3>
+        <input type="radio" name="q5" value="a">A. CO2<br>
+        <input type="radio" name="q5" value="b">B. H2O<br>
+        <input type="radio" name="q5" value="c">C. O2<br>
+        <input type="radio" name="q5" value="d">D. NaCl<br>
+    </div>
+
+    <script>
+        $("#q1").click(function(){
+            $("#quiz1").fadeIn();
+            $("#quiz2, #quiz3, #quiz4, #quiz5").hide();
+        });
+
+        $("#q2").click(function(){
+            $("#quiz2").fadeIn();
+            $("#quiz1, #quiz3, #quiz4, #quiz5").hide();
+        });
+
+        $("#q3").click(function(){
+            $("#quiz3").fadeIn();
+            $("#quiz1, #quiz2, #quiz4, #quiz5").hide();
+        });
+
+        $("#q4").click(function(){
+            $("#quiz4").fadeIn();
+            $("#quiz1, #quiz2, #quiz3, #quiz5").hide();
+        });
+        $("#q5").click(function(){
+            $("#quiz5").fadeIn();
+            $("#quiz1, #quiz2, #quiz3, #quiz4").hide();
+        });
+    </script>
+</body>
+</html>

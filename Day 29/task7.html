@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        #photo{
+            display: none;
+        }
+        #photo.phot{
+            display: flex !important;
+            flex-direction: row;
+            gap: 5px;
+           
+        }
+        .item{
+            border: 2px solid pink;
+            width : 10%;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" id="btn">Click me</button>
+    <div id="photo">
+        <div class="item">  <img src="./images/download1.jpg" alt="" width="100" height="100"></div>
+        <div class="item">  <img src="./images/download2.jpg" alt="" width="100" height="100"></div>
+        <div class="item">  <img src="./images/download3.jpg" alt="" width="100" height="100"></div>
+        <div class="item">  <img src="./images/download4.jpg" alt="" width="100" height="100"></div>
+        <div class="item">  <img src="./images/download5.jpg" alt="" width="100" height="100"></div>
+        <div class="item">  <img src="./images/download6.jpg" alt="" width="100" height="100"></div>
+    </div>
+
+    <script>
+        $("#btn").click(function(){
+            $("#photo").addClass("phot").fadeToggle();
+        })
+    </script>
+</body>
+</html>
