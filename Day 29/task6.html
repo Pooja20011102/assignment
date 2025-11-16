@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        #card{
+            background-color: rgb(83, 31, 83);
+            color: whitesmoke;
+            border:  1px solid rgb(168, 109, 168);
+            border-radius: 5px;
+            width : 200px;
+            height:  200px;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Build a small interactive info card that expands and collapses on click.</h1>
+    <button id="expands">Expand</button>
+    <button id="collapses">Collapse</button>
+    <div id="card">
+        <h3 id="item">Purple Perfume</h3>
+        <img src="d3.jpg" alt="flower" width="100" height="100" id="item1"><br>
+        <button id="item2">Buy</button>
+    </div>
+    
+
+    <script>
+        $("#expands").click(function(){
+                $("#card").slideDown(function(){
+                    $(this).css("display","css")
+                });
+        })
+
+         $("#collapses").click(function(){
+                $("#card").slideUp();
+        })
+    </script>
+</body>
+</html>

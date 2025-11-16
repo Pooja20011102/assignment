@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        #slide{
+        width : 100px;
+        height : 100px;
+        border : 1px solid plum;
+        background-color: peachpuff;
+        display: none;
+    }
+    </style>
+    
+</head>
+<body>
+    <h1>Add a click event that slides an element down or up.</h1>
+    <button id="button">Click me to show the slide the element</button>
+    <div id="slide"></div>
+
+    <script>
+        $("#button").click(function(){
+            $("#slide").slideDown();
+        })
+    </script>
+</body>
+</html>
