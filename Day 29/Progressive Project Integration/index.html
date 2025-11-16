@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Interactivity Demo</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        body { font-family: Arial; }
+
+        .btn {
+            padding: 10px 20px;
+            background: purple;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+
+        /* Modal styles */
+        #modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.6);
+        }
+        #modal-content {
+            width: 300px;
+            background: white;
+            padding: 20px;
+            margin: 120px auto;
+            border-radius: 10px;
+        }
+
+        /* Highlight section */
+        .section {
+            padding: 20px;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+        }
+        .highlight {
+            border-color: purple;
+            background: #f7e9ff;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="btn" id="openModal">Open Modal</button>
+    <button class="btn" id="toggleBox">Slide Toggle Box</button>
+
+    <div id="box" style="width:200px; height:100px; background:pink; display:none; margin-top:10px;"></div>
+
+    <div id="modal">
+        <div id="modal-content">
+            <p>This is a jQuery Modal!</p>
+            <button class="btn" id="closeModal">Close</button>
+        </div>
+    </div>
+
+    <h3>Select a section:</h3>
+
+    <div class="section">Section 1</div>
+    <div class="section">Section 2</div>
+    <div class="section">Section 3</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
