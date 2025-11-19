@@ -1,0 +1,1 @@
+select l.lesson,a.assignment from lessons l join assignments a on l.lesson_no = a.lesson_no;

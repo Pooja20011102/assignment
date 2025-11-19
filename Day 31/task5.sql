@@ -1,0 +1,1 @@
+select u.rollno,u.name,d.name from users u join department d on u.department_id = d.id;
