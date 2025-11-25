@@ -1,0 +1,1 @@
+-- Username Generator: Create a stored procedure (or a single UPDATE statement) that builds unique usernames using CONCAT, SUBSTRING, and LPAD (append numeric suffix if collision).
