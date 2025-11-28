@@ -1,0 +1,1 @@
+select datediff('2026-02-11',now()) as date_diff;

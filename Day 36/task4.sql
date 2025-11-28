@@ -1,0 +1,1 @@
+select replace('She is very bad','bad','good') as replaced_sentence;

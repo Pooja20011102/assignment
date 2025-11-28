@@ -1,0 +1,1 @@
+select lpad(id,4,'0') as roll_no,lower(name) as name from student_name;
