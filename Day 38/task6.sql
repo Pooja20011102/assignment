@@ -1,9 +1,8 @@
 -- Build a view that summarizes total orders per customer.
 
-create view total_summary as 
-select o.order_id,o.order_date,c.name as cutomer_name,p.name as product_name,
-(p.price*c.quantity)as total_price
-from customers c inner join products p on  c.product_id = p.product_id
-join orders o  on c.id = o.customer_id;
+create view total_customer_order as 
+select name,count(*) as order_count from customers c 
+inner join orders o on c.id = o.customer_id 
+group by name;
 
-select * from total_summary;
+select * from total_customer_order
