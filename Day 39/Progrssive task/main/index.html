@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Add User</h2>
+
+        <button onclick="select()">Select from view table</button>
+
+        <hr>
+        
+        <button class="select2-btn" onclick="select2()">Include stored procedure</button>
+        
+        <hr>
+
+        <button onclick="select3()">Get total summary</button>
+
+        <hr>
+        <label>Id:</label>
+        <input type="number" id="ID">
+        <button onclick="addUser()">Calculate bill for a given id</button>
+
+        <h3>Users List:</h3>
+        <pre id="output"></pre>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
