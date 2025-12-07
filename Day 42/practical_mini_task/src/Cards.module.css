@@ -1,0 +1,19 @@
+.card{
+    background-color: darkgoldenrod;
+    font-size: larger;
+    color : whitesmoke;
+    width : 30%;
+    border : 1px solid black;
+    margin-left : 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap : 10px;
+}
+
+img{
+    border-radius: 50%;
+    border: 1px solid black;
+    align-self: center;
+    
+}
