@@ -8,7 +8,7 @@ function Task2() {
   return (
     <div>
         <input type="text" value={Name} onChange={changename} />
-        <p>{Name}</p>
+        <p>Name  :{Name}</p>
     </div>
   )
 }
