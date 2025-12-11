@@ -1,9 +1,12 @@
+import { useState } from "react"
 
 function Task1(){
+    const [isLoggedIn, setIslogged] = useState(false)
+ 
     return (
         <>
-            <h1>hello</h1>
-            <h2>Welcome</h2>
+          <h3>{isLoggedIn ? "Logged In" : "Guest"}</h3>
+          <button onClick={() => {setIslogged(!isLoggedIn)}}>{isLoggedIn ? "Log Out" : "Log In"}</button>
         </>
     )
 }
