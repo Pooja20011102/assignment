@@ -1,34 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Task1 from "./Task1"
+import Task2 from './Task2'
+import Task3 from './Task3'
+import Task4 from './Task4'
+import Task5 from './Task5'
+import Task6 from './Task6'
+import Task7 from './Task7'
+import Task8 from './Task8'
+import Task9 from './Task9'
+import Task10 from './Task10'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <Task1></Task1>
+      <hr />
+      <Task2></Task2>
+      <hr />
+      <Task3></Task3>
+      <hr />
+      <Task4></Task4>
+      <hr />
+      <Task5></Task5>
+      <hr />
+      <Task6></Task6>
+      <hr />
+      <Task7></Task7>
+      <hr />
+      <Task8></Task8>
+      <hr />
+      <Task9></Task9>
+      <hr />
+      <Task10></Task10>
+
+      </>
   )
 }
 
