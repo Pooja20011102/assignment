@@ -12,7 +12,8 @@ function Task1() {
     }
   return (
     <div>
-        <input type="text" onChange={handleinput}/>
+        <label htmlFor="ename">Name&nbsp;</label>
+        <input type="text" onChange={handleinput} name="ename" id="pname"/><br /><br />
         <button onClick={addtolist}>Click me</button>
     </div>
   )
