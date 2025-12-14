@@ -8,6 +8,7 @@ import Task7 from './Task7'
 import Task8 from './Task8'
 import Task9 from './Task9'
 import Task10 from './Task10'
+import './App.css'
 
 function App() {
   
