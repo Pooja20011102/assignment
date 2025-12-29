@@ -1,0 +1,8 @@
+| Feature     | React State            | Redux                           |
+| ----------- | ---------------------- | ------------------------------- |
+| Scope       | Local (component only) | Global (entire app)             |
+| Used for    | Simple UI state        | Complex shared state            |
+| Data flow   | Component → Component  | Centralized store               |
+| Debugging   | Hard for large apps    | Easy with Redux DevTools        |
+| Boilerplate | Minimal                | More (Redux Toolkit reduces it) |
+| Example     | Modal open/close       | Auth, cart, theme               |

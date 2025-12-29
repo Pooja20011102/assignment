@@ -1,0 +1,38 @@
+Identify roles: Store, Action, Reducer
+
+// Store
+
+Holds the entire application state
+
+Only one store in a Redux app
+
+Created using a reducer
+
+Example:
+
+{
+  count: 0,
+  user: { name: "Pooja" }
+}
+
+// Action
+
+A plain JavaScript object
+
+Describes what happened
+
+Must have a type
+
+Example:
+
+{ type: "INCREMENT" }
+
+// Reducer
+
+A pure function
+
+Decides how state changes
+
+Takes state and action, returns new state
+
+(state, action) => newState

@@ -1,0 +1,23 @@
+Explain Redux data flow (Very Important ⭐)
+
+Redux follows one-way data flow:
+
+UI → Action → Reducer → Store → UI
+
+Step-by-step:
+
+User clicks a button in UI
+
+UI dispatches an action
+
+Action goes to reducer
+
+Reducer creates new state
+
+Store saves the new state
+
+UI automatically re-renders with updated data
+
+Example:
+
+dispatch({ type: "INCREMENT" });

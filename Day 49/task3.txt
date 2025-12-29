@@ -1,0 +1,13 @@
+Write an action object
+
+const incrementAction = {
+  type: "INCREMENT"
+};
+
+
+With data (payload):
+
+const addUserAction = {
+  type: "ADD_USER",
+  payload: { name: "Pooja" }
+};

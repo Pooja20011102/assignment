@@ -1,0 +1,5 @@
+What is Redux?
+
+Redux is a state management library used to manage and share application data (state) across components in a predictable way.
+
+Instead of many components managing their own state, Redux keeps one central store where the entire app’s state lives.

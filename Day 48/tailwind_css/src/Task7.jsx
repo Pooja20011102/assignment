@@ -7,7 +7,8 @@ function Task7() {
   <div className="bg-white p-6 rounded-xl shadow-lg w-80 text-center">
     
     <img
-      src="https://i.pravatar.cc/150"
+       src="https://i.pravatar.cc/150?id=3"
+
       className="w-24 h-24 rounded-full mx-auto"
       alt="profile"
     />
