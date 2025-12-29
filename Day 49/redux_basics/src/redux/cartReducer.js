@@ -10,10 +10,12 @@ function cartReducer(state = cartInitialState, action) {
       return {
         cartCount: state.cartCount > 0
           ? state.cartCount - 1
-          : 0
+          : ()=>{alert("You have no items in your cart")}
       };
 
     default:
       return state;
   }
 }
+
+export default cartReducer;

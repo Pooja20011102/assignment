@@ -13,3 +13,5 @@ function authReducer(state = authInitialState, action) {
       return state;
   }
 }
+
+export default authReducer;

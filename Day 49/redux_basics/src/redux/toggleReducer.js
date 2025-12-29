@@ -1,10 +1,10 @@
-import TOGGLE_THEME from "./toggle";
+import { TOGGLE_THEME } from "./toggle";
 
 const themeInitialState = { theme: "light" };
 
 function themeReducer(state = themeInitialState, action) {
   switch (action.type) {
-    case "TOGGLE_THEME":
+    case TOGGLE_THEME:
       return {
         theme: state.theme === "light" ? "dark" : "light"
       };
@@ -13,6 +13,5 @@ function themeReducer(state = themeInitialState, action) {
       return state;
   }
 }
-
 
 export default themeReducer;
